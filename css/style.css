@@ -22,6 +22,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
@@ -106,13 +110,24 @@ button:focus{
     font-size: 1.8rem;
 }
 
+.header__toggle{
+    display: none;
+    color: var(--color-white);
+    font-size: 1.5rem;
+    position: absolute;
+    top: 1.3rem;
+    right: 1rem;
+}
+
 .header__menu {
     display: flex;
     gap: 4px;
 }
 
 .header__menu__item {
+    display: block;
     padding: 8px 16px;
+    border-bottom: 1px solid transparent;
 }
 
 .header__menu__item:hover{
@@ -126,6 +141,7 @@ button:focus{
 
 /* Home */
 #home {
+    /* background-color: purple; */
     background-color: var(--color-primary);
     color: var(--color-text);
     padding: 5rem 1rem;
@@ -330,6 +346,7 @@ button:focus{
     border-radius: 100%;
     text-align: center;
     box-shadow: 5px 5px 0px 0px var(--color-accent);
+    transition: opacity 300ms ease-in;
 }
 
 /* Footer */
@@ -354,7 +371,7 @@ button:focus{
 
 @media screen and (max-width: 860px) {
     .section{
-    padding: 3rem 2rem;
+    padding: 4rem 2rem;
     }  
 
     .title{
@@ -368,13 +385,22 @@ button:focus{
     .header{
         flex-direction: column;
         align-items: start;
+        background-color: var(--color-primary);
     }
 
+    .header__toggle {
+        display: block;
+    }
     .header__menu {
+        display:none;
         flex-direction: column;
         text-align: center;
-        padding: 1rem 4rem;
+        margin: 1rem 4rem;
         gap: 1rem;
+    }
+
+    .header__menu.open {
+        display: flex;
     }
 
     .header__nav{
