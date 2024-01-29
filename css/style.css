@@ -7,6 +7,13 @@
     --color-accent-variant: var(--color-orange);
     --color-text : var(--color-white);
 
+    /* Background */
+    --home-bg-gradient: linear-gradient(
+        180deg,
+         rgba(23,49,93,1) 0%,
+         rgba(5,10,19,1) 100%
+    );
+
     /* Colors */
     --color-white: #ffffff;
     --color-black: #050a13;
@@ -16,6 +23,10 @@
 
     /* Size */
     --size-max-width: 1200px;
+
+    /* Divider */
+    --divider-single-wave: url('data:image/svg+xml;utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none"> <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"></path> </svg>');
+    --divider-arrow: url('data:image/svg+xml;utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none"> <path d="M649.97 0L550.03 0 599.91 54.12 649.97 0z"></path> </svg>');
 }
 
 * {
@@ -141,12 +152,26 @@ button:focus{
 
 /* Home */
 #home {
-    /* background-color: purple; */
+    position: relative;
     background-color: var(--color-primary);
+    background: var(--home-bg-gradient);
     color: var(--color-text);
     padding: 5rem 1rem;
     padding-top: 7rem;
     text-align: center;
+}
+#home::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: calc(126% + 1.3px);
+    height: 64px;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    background-color: var(--color-white);
+    -webkit-mask: var(--divider-single-wave);
 }
 
 .home__avatar{
@@ -245,6 +270,7 @@ button:focus{
 
 /* Skills */
 #skills {
+    position: relative;
     background-color: var(--color-primary-variant);
     color: var(--color-text);
 }
@@ -303,7 +329,7 @@ button:focus{
     background-color: var(--color-accent);
 }
 
-/* What I've Done */
+/* Work */
 .works {
     margin: 3rem;
 }
@@ -315,6 +341,10 @@ button:focus{
     margin-bottom: 2rem;
 }
 
+.work__detail {
+    text-align: start;
+}
+
 .work__img {
     width: 350px;
     height: 300px;
@@ -322,8 +352,7 @@ button:focus{
 }
 
 .work__bubble {
-    height: 300px;
-    padding: 1rem;
+    padding: 1.5rem;
     border-radius: 8px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
@@ -351,8 +380,23 @@ button:focus{
 
 /* Footer */
 #contact {
+    position: relative;
     background-color: var(--color-primary);
     color: var(--color-text);
+}
+
+#contact::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% + 1.3px);
+    height: 56px;
+    overflow: hidden;
+    line-height: 0;
+    background-color: var(--color-white);
+    mask:var(--divider-arrow);
+    -webkit-mask: var(--divider-arrow);
 }
 
 .contact__links{

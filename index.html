@@ -23,11 +23,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/02d5f1e62a.js" crossorigin="anonymous"></script>
+    <!-- Typeit -->
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
     <!-- Javascript -->
     <script type="module" src="src/main.js" defer></script>
     <script type="module" src="src/active_menu.js" defer></script>
+    <script type="module" src="src/type.js" defer></script>
 </head>
 <body>
     <!-- Header -->
@@ -41,7 +44,7 @@
                 <li><a class="header__menu__item active" href="#home">Home</a></li>
                 <li><a class="header__menu__item" href="#about">About</a></li>
                 <li><a class="header__menu__item" href="#skills">Skills</a></li>
-                <li><a class="header__menu__item" href="#work">What I've done</a></li>
+                <li><a class="header__menu__item" href="#work">Works</a></li>
                 <li><a class="header__menu__item" href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -55,7 +58,7 @@
         <section id="home">
            <div class="home__container">
             <img class="home__avatar" src="images/hjProfile.png" alt="Hwajin's profile">
-            <h2 class="home__title">Hello,<br/> I&#39;m <strong class="home__title--strong">Hwajin Lee.</strong></h2>
+            <h2 class="home__title" aria-label="Hello">Hello,<br/> I&#39;m <strong class="home__title--strong">Hwajin Lee.</strong></h2>
             <h2 class="home__description">Creative and passionate web designer</h2>
             <a class ="home__contact" href="#contact">Contact Me</a>
            </div>
@@ -105,9 +108,9 @@
             <div class="max-container">
                 <h2 class="title">My Skills</h2>
             <p class="description">Skills & Attributes</p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic explicabo pariatur aliquam! Eaque expedita obcaecati, placeat, repellat aliquam quae totam vitae ipsa veritatis, harum inventore quas assumenda iure aspernatur cumque.
-            </p>
+            <br>
+                I possess skills in basic web page implementation, including prototyping, as well as proficiency in backend programming languages.
+            </br>
             <div class="skills">
                 <section class="skills__coding">
                     <h3 class="skills__title">Coding Skills</h3>
@@ -148,29 +151,37 @@
                         <li>Git</li>
                     </ul>
                 </section>
-
-
             </div>
             </div>
         </section>
         <!-- Work -->
         <section id="work" class="section max-container">
-            <h2 class="title">What I've done</h2>
-            <p class="description">Summary of Education, Work Experience</p>
+            <h2 class="title">My Works</h2>
+            <p class="description">Summary of Work Experience</p>
             <ul class="works">
                 <li class="work">
                     <img src="images/w1.png" alt="edu1" class="work__img"">
                     <div class="work__bubble">
-                        <p>영화리뷰 사이트 제작</p>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos magni, repellendus qui iste, dolorem natus mollitia suscipit corporis aperiam non, quibusdam cupiditate quia! Eligendi magnam numquam doloribus reprehenderit nobis. Veritatis.</p>
-                        <p><a href="https://github.com/HansolKim-joy/test" target="_blank" class="work__bubble__link">Github</a></p>
+                        <h3><strong>Toy Project1 - Movie Review Sharing Platform</strong></h3>
+                        <h4>Implementation of review board</Implementation></h4>
+                        <div class="work__detail">
+                            <p>I created a page to view and search for posts in the bulletin board list.</p>
+                            <p>On the detailed page, you can also edit and delete posts, as well as write comments.</p>
+                            <br><i>#JAVA #JSP/Servlet #ORACLE #Apache, GitHub</i>
+                        </div>
+                        <br><a href="https://github.com/HansolKim-joy/test" target="_blank" class="work__bubble__link">Github</a>
                     </div>
                 </li>
                 <li class="work">
                     <img src="images/w2.png" alt="edu2" class="work__img">
                     <div class="work__bubble">
-                        <p>클래스 사이트 제작</p>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod modi magni ipsam rem veniam nam nisi qui dolorem impedit, animi ipsum atque nesciunt vel ut neque possimus optio odit repudiandae.</p>
+                        <h3><strong>Toy Project2 - Hobby and Leisure Platform</strong></h3>
+                        <h4>Hobby and Leisure Platform</h4>
+                        <div class="work__detail">
+                            <p>I emplemented a page to browse meetup or class lists, allowing you to change the sorting order and set your preferred price range by using filters.</p>
+                            <p>Also, you can hit the heart button below the thumbnail to add it to your wishlist.</p><br>
+                            <i>#JAVA #JSP #Spring #ORACLE #Apache, GitHub</i><br><br>
+                        </div>
                     </div>
                     
                 </li>
@@ -186,7 +197,7 @@
     <!-- Footer -->
     <footer id="contact" class="section">
         <div class="max-container">
-            <h2>Contact Me</h2>
+            <h2>Contact Me</h2><br>
             <p>jaylee777ca@gmail.com</p>
             <ul class="contact__links">
                 <li>
@@ -194,8 +205,8 @@
                         <i class="fa-brands fa-github"></i>
                     </a>
                 </li>
-            </ul>
-            <p>🤩Hwajin Lee - All rights reserved</p>
+            </ul><br>
+            🤩Hwajin Lee - All rights reserved
         </div>
     </footer>
 
