@@ -17,8 +17,8 @@
     /* Colors */
     --color-white: #ffffff;
     --color-black: #050a13;
-    --color-blue: #03e8f9;
-    --color-orange: #fd6413;
+    --color-blue: #74C0FC;
+    --color-orange: #ad728a;
     --color-gray: #1b1e26;
 
     /* Size */
@@ -327,6 +327,15 @@ button:focus{
 .bar__value {
     height: 3px;
     background-color: var(--color-accent);
+    animation: fillBars 2.5s 1;
+}
+
+@keyframes fillBars{
+    from{
+        width: 0;
+    } to {
+        widht: 100%;
+    }
 }
 
 /* Work */
