@@ -31,6 +31,7 @@
     <script type="module" src="src/main.js" defer></script>
     <script type="module" src="src/active_menu.js" defer></script>
     <script type="module" src="src/type.js" defer></script>
+    <script type="module" src="src/projects.js" defer></script>
 </head>
 <body>
     <!-- Header -->
@@ -87,17 +88,22 @@
             </ul>
             <ul class="jobs">
                 <li class="job">
-                    <img src="images/kh.png" alt="kh logo" class="job__img"/>
+                    <img src="images/tbw.png" alt="tbw logo" class="job__img"/>
                     <div>
-                        <p class="job__name">KH IT education center</p>
-                        <p class="job__period">2019 Dec - 2020 June</p>
+                        <span class="job__name">Tobeway - Web Developer</span>
+                        <span class="job__period">(Jun 2020 - Sep 2022)</span>
+                        <p>- Develop website functionality in respose to client’s requests</p>
+                        <p>- Modify website architecture and manage data</p>
+                        <p>- Test new applications, or monitor site perfromance</p>
+                        
                     </div>
                 </li>
                 <li class="job">
-                    <img src="images/tbw.png" alt="tbw logo" class="job__img"/>
+                    <img src="images/humber.png" alt="humber logo" class="job__img"/>
                     <div>
-                        <p class="job__name">Tobeway web development Company</p>
-                        <p class="job__period">2020 Jun - 2022 Sep</p>
+                        <span class="job__name">Humber College - Web Design and Development</span>
+                        <span class="job__period">(Sep 2024 - Apr 2025)</span>
+                        <p> Gained hands-on experience and developed skills in design and programming </p>
                     </div>
                 </li>
             </ul>
@@ -113,36 +119,37 @@
             </br>
             <div class="skills">
                 <section class="skills__coding">
-                    <h3 class="skills__title">Coding Skills</h3>
+                    <h3 class="skills__title">My Skills</h3>
                     <ul>
                         <li class="bar">
-                            <div class="bar__metadata"><span>HTML</span><span>98%</span></div>
-                            <div class="bar__bg"><div class="bar__value" style="width:98%"></div></div>
+                            <div class="bar__metadata"><span>HTML/CSS</span><span><!--98%--></span></div>
+                            <div class="bar__bg"><div class="bar__value" style="width:100%"></div></div>
                         </li>
                         <li class="bar">
-                            <div class="bar__metadata"><span>CSS</span><span>90%</span></div>
-                            <div class="bar__bg"><div class="bar__value" style="width:90%"></div></div>
+                            <div class="bar__metadata"><span>JavaScript</span><span><!--98%--></span></div>
+                            <div class="bar__bg"><div class="bar__value" style="width:100%"></div></div>
                         </li>
                         <li class="bar">
-                            <div class="bar__metadata"><span>JavaScript</span><span>90%</span></div>
-                            <div class="bar__bg"><div class="bar__value" style="width:90%"></div></div>
+                            <div class="bar__metadata"><span>Figma</span><span><!--98%--></span></div>
+                            <div class="bar__bg"><div class="bar__value" style="width:100%"></div></div>
                         </li>
                         <li class="bar">
-                            <div class="bar__metadata"><span>Java</span><span>80%</span></div>
-                            <div class="bar__bg"><div class="bar__value" style="width:80%"></div></div>
+                            <div class="bar__metadata"><span>Photoshop</span><span><!--98%--></span></div>
+                            <div class="bar__bg"><div class="bar__value" style="width:100%"></div></div>
                         </li>
                         <li class="bar">
-                            <div class="bar__metadata"><span>Oracle</span><span>79%</span></div>
-                            <div class="bar__bg"><div class="bar__value" style="width:79%"></div></div>
+                            <div class="bar__metadata"><span>Illustrator</span><span><!--98%--></span></div>
+                            <div class="bar__bg"><div class="bar__value" style="width:100%"></div></div>
                         </li>
                     </ul>
                 </section>
                 <section class="skills__tools">
                     <h3 class="skills__title">Tools</h3>
                     <ul>
-                        <li>Visual Studio Code</li>
-                        <li>Eclipse</li>
                         <li>Figma</li>
+                        <li>Adobe XD</li>
+                        <li>Photoshop</li>
+                        <li>Illustrator</li>
                     </ul>
                 </section>
                 <section class="skills__etc">
@@ -154,8 +161,81 @@
             </div>
             </div>
         </section>
+
         <!-- Work -->
-        <section id="work" class="section max-container">
+        <section id="work" class="section">
+          <div class="max-container">
+            <h2 class="title">My work</h2>
+            <p class="description">Projects</p>
+            <ul class="categories">
+                <li><button class="category category--selected" data-category="all">All <span class="category__count">6</span></button></li>
+                <li><button class="category" data-category="website">Website<span class="category__count">2</span></button></li>
+                <li><button class="category" data-category="prototype">Prototype<span class="category__count">1</span></button></li>
+                <li><button class="category" data-category="graphic">Graphic<span class="category__count">3</span></button></li>
+            </ul>
+            <ul class="projects">
+                <li class="project" data-type="website">
+                    <a href="https://github.com/HumberWDDM/Project1" target="_blank">
+                        <img src="images/projects/gp1.png" alt="project1" class="project__img">
+                        <div class="project__metadata">
+                            <h3 class="project__title">Group Project1</h3>
+                            <p>Hompeage using HTML,CSS,JS</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="project" data-type="website">
+                    <a href="https://github.com/leehj00/proj1" target="_blank">
+                        <img src="images/projects/gp2.png" alt="project" class="project__img">
+                        <div class="project__metadata">
+                            <h3 class="project__title">Group Project2</h3>
+                            <p>Homepage using EJS,Tailwind,SCSS</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="project" data-type="prototype">
+                    <a href="images/projects/prototype.png" target="_blank">
+                        <img src="images/projects/prototype.png" alt="project" class="project__img">
+                        <div class="project__metadata">
+                            <h3 class="project__title">Prototype</h3>
+                            <p>Prototype using Photoshop</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="project" data-type="graphic">
+                    <a href="images/projects/uikit.png" target="_blank">
+                        <img src="images/projects/uikit.png" alt="project" class="project__img">
+                        <div class="project__metadata">
+                            <h3 class="project__title">UI Kit</h3>
+                            <p>UI Kit using Illustrator</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="project" data-type="graphic">
+                    <a href="images/projects/splash.png" target="_blank">
+                        <img src="images/projects/splash.png" alt="project" class="project__img">
+                        <div class="project__metadata">
+                            <h3 class="project__title">Splash Banner</h3>
+                            <p>Splash Banner using Illustrator</p>
+                        </div>
+                    </a>
+                </li>
+                
+                <li class="project" data-type="graphic">
+                    <a href="images/projects/juice_ad.jpg" target="_blank">
+                        <img src="images/projects/juice_ad.jpg" alt="project" class="project__img">
+                        <div class="project__metadata">
+                            <h3 class="project__title">Advertisement Image</h3>
+                            <p>Advertisement for Social media using Photoshop</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+          </div>  
+        </section>
+
+
+        <!-- Tetimonial -->
+        <!-- <section id="work" class="section max-container">
             <h2 class="title">My Works</h2>
             <p class="description">Summary of Work Experience</p>
             <ul class="works">
@@ -186,7 +266,11 @@
                     
                 </li>
             </ul>
-        </section>
+        </section> -->
+
+
+
+
         <!-- Arrow up -->
         <aside>
             <a class="arrow-up" href="#home" title="back to top">
@@ -201,8 +285,8 @@
             <p>jaylee777ca@gmail.com</p>
             <ul class="contact__links">
                 <li>
-                    <a class="contact__link" href="https://github.com/leehj00" target="_blank" title="my github link">
-                        <i class="fa-brands fa-github"></i>
+                    <a class="contact__link" href="https://www.linkedin.com/in/leehj00/" target="_blank" title="my linkedin link">
+                        <i class="fa-brands fa-linkedin"></i>
                     </a>
                 </li>
             </ul><br>
